@@ -1,0 +1,7 @@
+<launch>
+    <!-- Load parameters from params.yaml file -->
+    <rosparam command="load" file="$(find ransac)/params/params.yaml"/>
+    
+    <!-- Launch your node -->
+    <node name="ransac_line_fitter_node" pkg="ransac" type="ransac.py" output="screen"/>
+</launch>
